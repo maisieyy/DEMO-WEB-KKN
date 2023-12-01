@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.logo {
+  width: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none; /*menghilangkan garis bawah*/
+}
+
+nav ul li a:hover {
+  color: #459b98;
+  font-weight: bold;
+}
+
+/* Style Home */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 90vh; /* mengukur ukuran elemen berdasarkan tinggi viewport (tinggi layar) pengguna.*/
+}
+
+.home-content {
+  width: 40%;
+}
+
+.home-content h1 {
+  color: #459b98;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.home-content p {
+  margin: 10px 0;
+}
+
+.home-img {
+  width: 40%;
+}
+
+.home-btn {
+  padding: 8px;
+  border: none;
+  background-color: #459b98;
+  color: white;
+  border-radius: 8px; /* membuat sudut border membulat */
+  cursor: pointer; /*mengubah bentuk kursor jika dikenakan di atas button. Agar mempermudah user bahwa tombol ini bisa di/untuk diklik*/
+}
+
+.home-btn:hover {
+  background-color: black;
+}
+
+/* Style About */
+.tittle {
+  color: #459b98;
+  font-size: 1.8rem; /*dikali dari font root. Defaultnya 16px*/
+  margin-bottom: 5px;
+}
+
+.line {
+  background-color: #459b98;
+  width: 250px;
+  height: 5px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+#about {
+  padding: 20px 0;
+  background-color: #d6d6d6;
+  text-align: center;
+}
+
+#about p {
+  width: 900px;
+  margin: auto;
+}
+
+/* Style Service */
+#service {
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  color: #459b98;
+  font-size: 1.8rem; /*dikali dari font root. Defaultnya 16px*/
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.content {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px auto;
+  text-align: center;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px;
+  padding: 27px 20px;
+  background-color: #459b98;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.box i {
+  font-size: 40px;
+  padding-bottom: 20px;
+  font-weight: 20px;
+}
+
+.box h4 {
+  padding-bottom: 15px;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.box p {
+  padding-bottom: 20px;
+}
+
+.box button {
+  color: #459b98;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.box button:hover {
+  color: black;
+}
+
+#contact {
+  margin-top: -30px;
+  background-color: #d6d6d6;
+}
+
+.body {
+  width: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px auto;
+  text-align: center;
+  color: white;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px;
+  padding: 27px 20px;
+  background-color: #459b98;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.info i {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #459b98;
+}
+
+.form h3 {
+  display: flex;
+  color: white;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.form label {
+  display: flex;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Adjust styles for specific input types */
+.form input[type="text"],
+.form input[type="email"] {
+  display: inline-block;
+}
+
+/* Style the submit button */
+.form button {
+  background-color: white;
+  color: #459b98;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form button:hover {
+  color: black;
+}
+
+/* Add some spacing between form sections */
+.form .email {
+  margin-bottom: 20px;
+}
+
+/* Style the map container */
+.map {
+  display: flex;
+  margin-top: 50px;
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  margin-top: -2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex-basis: 20%;
+  margin-bottom: 20px;
+  margin-left: 4rem;
+}
+
+.footer-section h2 {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 0.9em;
+  padding: 3px 0;
+}
+
+.footer-section a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-bawah {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  margin-bottom: 30px;
+}
