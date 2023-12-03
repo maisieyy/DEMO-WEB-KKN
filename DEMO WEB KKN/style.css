@@ -91,10 +91,12 @@ nav ul li a:hover {
   padding: 20px 0;
   background-color: #d6d6d6;
   text-align: center;
+  padding-top: 7rem;
 }
 
 #about p {
   width: 900px;
+  height: 350px;
   margin: auto;
 }
 
@@ -163,17 +165,27 @@ nav ul li a:hover {
   color: black;
 }
 
+/* Styla Contact */
 #contact {
-  margin-top: -30px;
   background-color: #d6d6d6;
+  padding-top: 5rem;
+}
+
+.heading {
+  color: #459b98;
+  font-size: 1.8rem; /*dikali dari font root. Defaultnya 16px*/
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 3rem;
 }
 
 .body {
   width: 1080px;
+  height: 410px; /* mengukur ukuran elemen berdasarkan tinggi viewport (tinggi layar) pengguna.*/
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 75px auto;
+  margin: 40px auto;
   text-align: center;
   color: white;
 }
@@ -189,81 +201,21 @@ nav ul li a:hover {
   background-color: #459b98;
   border-radius: 10px;
   cursor: pointer;
+  margin-top: -10rem;
 }
 
 .info i {
   display: flex;
   padding-bottom: 10px;
-}
-
-.form {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #459b98;
-}
-
-.form h3 {
-  display: flex;
-  color: white;
-  padding-bottom: 20px;
   font-size: 30px;
 }
 
-.form label {
-  display: flex;
-  color: white;
-  padding-bottom: 5px;
+.info p {
+  font-size: 20px;
+  padding-top: 10px;
 }
 
-.form input,
-.form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-/* Adjust styles for specific input types */
-.form input[type="text"],
-.form input[type="email"] {
-  display: inline-block;
-}
-
-/* Style the submit button */
-.form button {
-  background-color: white;
-  color: #459b98;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.form button:hover {
-  color: black;
-}
-
-/* Add some spacing between form sections */
-.form .email {
-  margin-bottom: 20px;
-}
-
-/* Style the map container */
-.map {
-  display: flex;
-  margin-top: 50px;
-  width: 900px;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* Style Footer */
 footer {
   background-color: white;
   color: black;
